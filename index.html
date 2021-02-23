@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh_cn"
+<html>
+<head>
+<meta charset="utf-8">
+<title>成都帕斯卡尔特科技有限公司</title>
+<script src="recourse/js/index.js"></script>
+<link href="recourse/css/index.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="recourse/img/logo.jpg" type="image/x-icon" />
+<link rel="shortcut icon" href="recourse/img/logo.jpg" type="image/x-icon"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+</head>
+<body id="body">
+<!--顶部topbar。-->
+    <div class="topbar" >
+        <div class="topleft">
+            <img onClick="home" class="toplogo" src="recourse/img/logo.jpg">
+            <a class="toptitle">帕斯卡尔特科技</a>
+        </div>
+        <div class="topright">
+            <button class="topdownload" onClick="down()">我有疑问</button>
+        </div>
+
+    </div>
+<!--导航栏-->
+    <div class="menubar">
+        <ul class="menu">
+        <li class="tab" onClick="hometab()" >首页</li>
+        <li class="tab" onClick="newstab()" >新闻</li>
+        <li class="tab" onClick="recruittab()" >招募</li>
+        <li class="tab" onClick="abouttab()">关于</li>
+        <div style="clear:both"></div>
+        <!--让背景显示-->
+    </ul>
+    </div>
+    
+<!--中部-->
+    <div class="middle">
+        <iframe src="page/home/home.html" frameborder="0" scrolling="no" id="minihtml" onload="setIframeHeight(this)"></iframe>
+    </div>
+
+<!--底部-->
+ <div id="v2" class="bottom"> 
+   <a id="bottomp1" class="bottomp">Copyrigh © 成都帕斯卡尔特科技有限公司 2021-2023 All rights reserved<br class="bottomhr">Copyrigh © iFOX 2021-2023 All rights reserved<br class="bottomhr">网站由 iFOX电竞俱乐部 运营和维护</a> 
+ </div>  
+</body>
+
+</html>

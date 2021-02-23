@@ -1,0 +1,161 @@
+/*以下是全局样式表*/
+button {
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
+    border-radius:6px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button:hover {
+    background-color:aliceblue;
+    color:black;
+}
+
+iframe {
+		width:100%;
+		margin:0 0 1em;
+        border:0;
+}
+
+/*以下是body样式表*/
+html,body {
+    width:100%;
+    margin:0px;
+    padding:0px;
+}
+
+/*以下是顶部div的样式表*/
+.topbar{
+    padding: 0px;
+    margin: 0px;
+    height: 36px;
+    width: 100%;
+    background:linear-gradient(to left,#d3959b,#bfe6ba);
+}
+.toplogo{
+    /*flex 布局*/
+    display: flex;
+    /*实现垂直居中*/
+    align-items: center;
+    float: left;
+    width: 32px;
+    height: auto;
+    padding:2px;
+    border-radius: 50%;
+}
+.toplogo:hover{
+    cursor: pointer;
+}
+
+.toptitle{
+    /*flex 布局*/
+    display: flex;
+    /*实现垂直居中*/
+    align-items: center;
+    float: left;
+    height: 100%;
+    width: auto;
+    font-size: 16px;
+    transition-duration: 0.5s;
+}
+
+.toptitle:hover{
+    cursor: pointer;
+}
+.topleft{
+    /*flex 布局*/
+    display: flex;
+    /*实现垂直居中*/
+    align-items: center;
+    float: left;
+    height: 100%;
+    width: 70%;
+}
+.topright{
+    /*flex 布局*/
+    display: flex;
+    /*实现垂直居中*/
+    align-items: center;
+    float: right;
+    width: auto;
+    height: 100%;
+    padding-right: 2px;
+}
+.topdownload{
+				 text-align:center;
+    margin-right: 6px;
+    padding: 6px 15px;
+    height: 85%;
+    width: auto;
+}
+
+
+/*导航样式*/
+.menubar{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(to left,#d3959b,#bfe6ba);
+}
+.menu{
+    width: 70%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    list-style-type:none;
+}
+.tab{
+    cursor: pointer;
+    margin:0px 0px 0px 0px ;
+    font-size: 16px;
+    float: left;
+    padding:5px 16px 5px 16px;
+    transition-duration: 0.5s;
+}
+.tab:hover{
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    border-radius:7px 7px 3px 3px;
+    background: rgba(0,0,0,0.25);
+}
+
+/*中间样式*/
+.middle{
+    margin: 0px;
+    padding: 0px;
+}
+.minihtml{
+    margin: 0px;
+    padding:0px;
+}
+
+
+/*底部样式*/
+.bottom{
+    text-align:center;
+    padding: 10px 5px 5px 5px;
+    height: 43px;
+    width: 100%;
+    background: rgba(80,80,80,1.00);
+}
+.bottomp{
+					display:block;
+					padding:2px;
+					font-size: 8px;
+    text-align: center;
+    width: 100%;
+    height:12px;
+    color: whitesmoke;
+}
+.bottomhr{
+border:0px;
+}

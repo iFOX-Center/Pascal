@@ -1,0 +1,87 @@
+/*body样式*/
+#body{
+  text-align:center;
+  width:100%;
+  height:100%;
+  margin:0px;
+  padding:0px;
+  background-image:url(recourse/img/bg/bg.jpg);
+}
+/*按钮样式*/
+#down{
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
+  border-radius:6px;
+  background-color: brown; /* Green */
+  border:none;
+  color: white;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  margin:6px 6px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration:0.4s;
+  cursor:pointer;
+  padding:10px 40px;
+}
+/*按钮hover样式*/
+#down:hover {
+  background-color:aliceblue;
+  color:black;
+}
+/*顶部bar*/
+.topbar{
+  padding: 0px;
+  margin: 0px;
+  height: 15%;
+  width: 100%;
+}
+.toplogo{
+  /*flex 布局*/
+  display: flex;
+  /*实现垂直居中*/
+  align-items: center;
+  float: left;
+  width: 48px;
+  height: auto;
+  padding:2px;
+  border-radius: 50%;
+}
+.toptitle{
+  /*flex 布局*/
+  display: flex;
+  /*实现垂直居中*/
+  align-items: center;
+  float: left;
+  height: 100%;
+  width: auto;
+  font-size: 16px;
+  transition-duration: 0.5s;
+}
+
+.toptitle:hover{
+  cursor: pointer;
+}
+.topleft{
+  /*flex 布局*/
+  display: flex;
+  /*实现垂直居中*/
+  align-items: center;
+  float: left;
+  height: 50%;
+  width: 70%;
+  padding:20px 20px;
+}
+
+/*下载按钮样式*/
+#downbar{
+  width:100%;
+  height:15%;
+  }
+
+#bottom{
+  width:100%;
+  height:70%;
+  }
+#imgg{
+  height:100%;
+  }
