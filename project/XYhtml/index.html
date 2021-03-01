@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>XY Html官网</title>
+</head>
+<style>
+/*html和body样式*/
+html,body{
+  margin:0;
+  padding:0;
+}
+#topbar{
+  height:80px;
+  width:100%;
+  background:grey;
+  }
+#topimg{
+  float:left;
+  height:60px;
+  width:60px;
+  margin:10px;
+  }
+#topp{
+  font-size:40px;
+  float:left;
+  width:calc(100% - 200px);
+  height:60px;
+  margin:10px;
+  padding:10px 0px;
+  }
+#down{
+  float:right;
+  width:60px;
+  height:40px;
+  padding:auto;
+  margin:20px;
+  }
+#down{
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
+    border-radius:6px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#down:hover {
+    background-color:aliceblue;
+    color:black;
+}
+</style>
+<body>
+<div id="topbar">
+  <img id="topimg" src="https://gitee.com/sTaR-Homes/company/raw/master/icon.png"></img>
+  <p id="topp">XY Html</p>
+  <button id="down" onclick="down()">下载</button>
+</div>
+</body>
+</html>
