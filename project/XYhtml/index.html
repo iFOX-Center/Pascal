@@ -12,7 +12,7 @@ html,body{
 }
 /*顶部bar*/
 #topbar{
-  height:80px;
+  height:10%;
   width:100%;
   background:grey;
   padding:0;
@@ -23,6 +23,7 @@ html,body{
   height:60px;
   width:60px;
   margin:10px;
+  border-radius:20px;
   }
 #topp{
   font-size:40px;
@@ -59,7 +60,7 @@ html,body{
 /*文本bar*/
 #textbar{
   clear:both;
-  height:15%;
+  height:20%;
   margin:0;
   padding:0;
   }
@@ -70,32 +71,40 @@ html,body{
   width:auto;
   height:25px;
   }
+#title{
+  margin-left:4em;
+  }
 
 /*图片bar*/
 #imgbar{
   padding:0;
   margin:0;
   width:100%;
-  height:calc(70% - 80px);
+  height:60%;
   display:flex;
   justify-content:flex-start;
   overflow-x:auto;
   }
 #srceenimg{
-  height:100%;
+  height:calc(100% - 16px);
   margin:4px;
   border-radius:4px;
   }
 
 /*底部bar*/
 #bottombar{
-  height:15%;
-  background:red;
+  height:10%;
+  background:grey;
+  }
+.bp{
+  text-align:center;
+  color:#d3d5d4;
+  font-size:12px;
   }
 </style>
 <body>
 <div id="topbar">
-  <img id="topimg" src="https://gitee.com/sTaR-Homes/company/raw/master/icon.png"></img>
+  <img id="topimg" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/icon.jpg"></img>
   <p id="topp">XY Html</p>
   <button id="down" onclick="down()">下载</button>
 </div>
@@ -104,12 +113,14 @@ html,body{
 <p id="title">极致开发体验！</p>
 </div>
 <div id="imgbar">
-<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/01.jpg"></img>
-<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/02.jpg"></img>
-<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/03.jpg"></img>
-<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/04.jpg"></img>
+<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/01.jpg"></img>
+<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/02.jpg"></img>
+<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/03.jpg"></img>
+<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/04.jpg"></img>
 </div>
 <div id="bottombar">
+<p class="bp">Copyrigh © 成都帕斯卡尔特科技有限公司 2021-2023 All rights reserved</p>
+<p class="bp">Copyrigh © iFOX电竞俱乐部 2021-2023 All rights reserved</p>
 </div>
 <script>
 function down(){
