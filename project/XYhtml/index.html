@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCT:YPE html>
 <html>
 <head>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -10,10 +10,13 @@ html,body{
   margin:0;
   padding:0;
 }
+/*顶部bar*/
 #topbar{
   height:80px;
   width:100%;
   background:grey;
+  padding:0;
+  margin:0;
   }
 #topimg{
   float:left;
@@ -53,8 +56,12 @@ html,body{
     background-color:aliceblue;
     color:black;
 }
+/*文本bar*/
 #textbar{
   clear:both;
+  height:15%;
+  margin:0;
+  padding:0;
   }
 #zhijian{
   font-size:25px;
@@ -62,6 +69,28 @@ html,body{
   margin:0;
   width:auto;
   height:25px;
+  }
+
+/*图片bar*/
+#imgbar{
+  padding:0;
+  margin:0;
+  width:100%;
+  height:calc(70% - 80px);
+  display:flex;
+  justify-content:flex-start;
+  overflow-x:auto;
+  }
+#srceenimg{
+  height:100%;
+  margin:4px;
+  border-radius:4px;
+  }
+
+/*底部bar*/
+#bottombar{
+  height:15%;
+  background:red;
   }
 </style>
 <body>
@@ -74,8 +103,13 @@ html,body{
 <p id="zhijian">至·简</p>
 <p id="title">极致开发体验！</p>
 </div>
+<div id="imgbar">
+<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/01.jpg"></img>
+<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/02.jpg"></img>
+<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/03.jpg"></img>
+<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/04.jpg"></img>
+</div>
 <div id="bottombar">
-
 </div>
 <script>
 function down(){
