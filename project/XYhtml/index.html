@@ -1,129 +1,280 @@
-<!DOCT:YPE html>
+<!DOCTYPE html>
+
+<!--图片web地址：
+https://star-homes.gitee.io/company/project/XYhtml/...
+可选的：
+toolbar1.jpg，
+toolbar2.jpg，
+editbar.png，
+help.jpg，
+highcodes.jpg。
+-->
+
 <html>
 <head>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>XY Html官网</title>
+<title>XY Html</title>
 </head>
 <style>
-/*html和body样式*/
-html,body{
-  margin:0;
+body,html{
+  height: 100%;
+  width: 100%;
   padding:0;
+  margin:0;
+  background-color:white;
 }
-/*顶部bar*/
+/*topbar*/
 #topbar{
-  height:10%;
   width:100%;
-  background:grey;
-  padding:0;
-  margin:0;
+  height:100px;
+  background-color:white;
+  /*flex 布局*/
+  display: flex;
+  /*实现垂直居中*/
+  align-items: center;
+  justify-content: center;
+  box-shadow:0px 6px 6px #adadb1;
+  position:fixed;
+}
+#icon1,#topp,#todown{
+  display:inline-block;
+  border-radius:24px;
   }
-#topimg{
-  float:left;
-  height:calc(100% - 20px);
-  margin:10px;
-  border-radius:20px;
-  }
+#icon1{
+  margin:18px;
+  height:64px;
+  box-shadow:3px 3px 6px #adadb1;
+}
 #topp{
-  font-size:40px;
-  float:left;
-  width:calc(100% - 200px);
-  height:calc(100% - 20px);
-  margin:10px;
-  padding:10px 0px;
-  }
-#down{
-  float:right;
-  width:60px;
-  height:calc(100% - 40px);
-  margin:20px;
-  }
-#down{
-    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
-    border-radius:6px;
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-#down:hover {
-    background-color:aliceblue;
-    color:black;
-}
-/*文本bar*/
-#textbar{
-  clear:both;
-  height:20%;
-  margin:0;
-  padding:0;
-  }
-#zhijian{
-  font-size:25px;
-  padding-left:25px;
-  margin:0;
-  width:auto;
-  height:25px;
-  }
-#title{
-  margin-left:4em;
-  }
-
-/*图片bar*/
-#imgbar{
-  padding:0;
-  margin:0;
-  width:100%;
-  height:60%;
-  display:flex;
-  justify-content:flex-start;
-  overflow-x:auto;
-  }
-#srceenimg{
-  height:calc(100% - 16px);
-  margin:4px;
-  border-radius:4px;
-  }
-
-/*底部bar*/
-#bottombar{
-  height:10%;
-  background:grey;
-  }
-.bp{
+  margin:18px;
+  width:calc(100% - 272px);
   text-align:center;
-  color:#d3d5d4;
-  font-size:12px;
+  font-size:24px;
+}
+
+#todown{
+  height:64px;
+  width:64px;
+  margin:18px;
+  background-color: hsla(229,29%,29%,1.00);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 3px 3px 6px #adadb1;
+  color: white;
+
+}
+
+/*div1*/
+#div1{ 
+  margin:0;
+  clear:both;
+}
+#h1{
+  padding:6px 24px;
+  margin:0;
+  text-shadow:3px 3px 64px black;
+}
+#p1{
+  font-size:18px;
+  text-indent:2em;
+}
+
+/*div全局*/
+.div{
+  background-color:white;
+  margin:24px;
+  padding:24px;
+  border-radius:12px;
+  box-shadow: 3px 3px 8px 2px #adadb1;
+}
+p{
+  text-shadow:3px 3px 8px grey;
+}
+/**/
+
+#highcodes{
+  width:70%;
+  margin-left:30%;
+  border-radius:12px;
+}
+
+#p11{
+  font-size:24px;
+  margin:0;
+}
+
+#p12{
+  text-align:right;
+  margin:0;
+}
+
+#toolbar2{
+  margin-left:30%;
+  width:70%;
+  padding:6px;
+  border-radius:12px;
+}
+
+#toolbar1{
+  margin-right:30%;
+  width:70%;
+  padding:6px;
+  border-radius:12px;
+}
+
+#p21{
+  font-size:24px;
+  margin:0;
+}
+#p22{
+  text-align:right;
+  margin:0;
+}
+#p31{
+  font-size:24px;
+  margin:0;
+}
+#p32{
+  text-align:right;
+  margin:0;
+}
+#p33{
+  font-size:24px;
+  margin:0;
+}
+#p34{
+  text-align:right;
+  margin:0;
+}
+#editbar{
+  width:100%;
+  padding:6px;
+  border-radius:12px;
+}
+
+#codehelp{
+  width:100%;
+  padding:6px;
+  border-radius:12px;
+}
+#p41{
+  font-size: 24px;
+  margin: 0;
+}
+#p42{
+  text-align: right;
+  margin: 0;
+}
+#divt{
+  height:106px;
   }
+#btndownload{
+  margin: 24px;
+  padding: 12px;
+  background-color: hsla(229,29%,29%,1.00);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 3px 3px 6px #adadb1;
+  color: white;
+}
+#btndownload{
+  margin: 24px;
+  padding: 12px;
+  background-color: hsla(229,29%,29%,1.00);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 3px 3px 6px #adadb1;
+  color: white;
+  transition:all 0.25s;
+}
+#btndownload:active{
+  background-color:white;
+  color:#adadb1;
+  transition:all 0.25s;
+  }
+
+#icon2{
+  height:64px;
+  width:auto;
+  border-radius:24px;
+  margin:auto 18px;
+  box-shadow:3px 3px 3px #adadb1;
+}
+#download{
+  width: auto;
+  height: calc(100% - 200px);
+  text-align: center;
+  background-color:white;
+  margin:48px 24px 24px 24px;
+  padding:24px;
+  border-radius:12px;
+  box-shadow: 3px 3px 8px 2px #adadb1;
+}
 </style>
+
 <body>
 <div id="topbar">
-  <img id="topimg" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/icon.jpg"></img>
-  <p id="topp">XY Html</p>
-  <button id="down" onclick="down()">下载</button>
+<img id="icon1" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/icon.jpg"></img>
+<p id="topp">XY Html</p>
+<button id="todown" onclick="tobottom()">立即<br>下载</button>
 </div>
-<div id="textbar">
-<p id="zhijian">至·简</p>
-<p id="title">极致开发体验！</p>
+<div id="divt">
+ <!--占位div-->
 </div>
-<div id="imgbar">
-<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/01.jpg"></img>
-<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/02.jpg"></img>
-<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/03.jpg"></img>
-<img id="srceenimg" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/04.jpg"></img>
+<div id="div1">
+<h1 id="h1">极·简</h1>
+<p id="p1">是一种态度。</p>
 </div>
-<div id="bottombar">
-<p class="bp">Copyrigh © 成都帕斯卡尔特科技有限公司 2021-2023 All rights reserved</p>
-<p class="bp">Copyrigh © iFOX电竞俱乐部 2021-2023 All rights reserved</p>
+<div class="div" id="div2" >
+<p id="p11">他们有的，我们也有。</p>
+<p id="p12">——代码高亮</p>
+<img id="highcodes" src="https://star-homes.gitee.io/company/project/XYhtml/highcodes.jpg"></img>
+</div>
+<div class="div" id="div3">
+<img id="toolbar1" src="https://star-homes.gitee.io/company/project/XYhtml/toolbar1.jpg"></img>
+<p id="p21">快捷，是效率的提现。</p>
+<p id="p22">——快捷工具与编辑</p>
+<img id="toolbar2" src="https://star-homes.gitee.io/company/project/XYhtml/toolbar2.jpg"></img>
+</div>
+<div class="div" id="div3">
+<p id="p31">误操作了？</p>
+<p id="p32">——此处撤销</p>
+<img id="editbar" src="https://star-homes.gitee.io/company/project/XYhtml/editbar.png"></img>
+<p id="p33">没有服务器？</p>
+<p id="p34">——保存后预览</p>
+</div>
+<div class="div" id="div4">
+<p id="p41">记不住代码？</p>
+<p id="p42">——代码提示</p>
+<img id="codehelp" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/codehelp.jpg"></img>
+</div>
+<div id="download">
+<img id="icon2" class="topicon" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/icon.jpg"></img>
+<br>
+<button id="btndownload" onclick="todown()">立即下载</button>
 </div>
 <script>
-function down(){
-    window.open("https://wws.lanzous.com/iKYLgmbrdra");
-    }
+function todown(){
+    alert("请自行下载最新版本\n访问密码：iFOX\n默认自动复制");
+    copyText( 'iFOX', function (){console.log('复制成功')})
+    window.open("https://mcgo.lanzous.com/b0167zbyf") ;
+        }
+         
+        function copyText(text, callback){ // text: 要复制的内容， callback: 回调
+            var tag = document.createElement('input');
+            tag.setAttribute('id', 'cp_hgz_input');
+            tag.value = text;
+            document.getElementsByTagName('body')[0].appendChild(tag);
+            document.getElementById('cp_hgz_input').select();
+            document.execCommand('copy');
+            document.getElementById('cp_hgz_input').remove();
+            if(callback) {callback(text)}
+        }
+      function tobottom(){
+          window.location.hash = "#download";
+          }
+    </script>
+
 </script>
 </body>
 </html>
