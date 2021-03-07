@@ -6,6 +6,9 @@
 <title>公告</title>
 </head>
 <body>
+    <div class="bar">
+    <p id="home" onClick="home()">回官网</p>
+    </div>
     <div class="bar" >
     <div class="t_d">
         <p class="gg">公告</p>
@@ -16,9 +19,9 @@
         <p class="textp">
             更新内容：
             <br>
-            1.修复bugs,
+            1.示例
             <br>
-            2.你是猪。
+            2.示例
             </p>
         </div>
     </div>
@@ -43,6 +46,7 @@
             text-shadow: 3px 3px 3px var(--colour);
         }
         .bar{
+            margin: 6px 0px;
             text-align: center;
             padding: 24px;
             border-radius: 24px;
@@ -89,5 +93,14 @@
             text-shadow: 3px 3px 24px var(--colour);
             font-size: 18px;
         }
+        #home{
+            text-align: left;
+        }
     </style>
+    <script>
+    function home(){
+        window.open("index.html");
+    }
+    </script>
+            
 </html>
