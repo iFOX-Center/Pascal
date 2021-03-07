@@ -10,10 +10,10 @@ highcodes.jpg。
 -->
 
 <html>
-<head>
-<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>XY Html</title>
-</head>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>XY Html</title>
+	</head>
 <style>
 *{
   outline:none;
@@ -159,72 +159,73 @@ p{
 }
 
 </style>
-<body>
-<div id="topbar">
-<img id="icon1" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/icon.jpg"></img>
-<p id="topp">XY Html</p>
-<button id="todown" onclick="tobottom()">立即<br>下载</button>
-</div>
-<div id="divfull">
-<!--占位div-->
-</div>
-<div id="div1">
-<h1 id="h1">极·简</h1>
-<p id="p1">是一种态度。</p>
-</div>
-<div class="div" id="div2" >
-<p class="pleft" id="p11">他们有的，我们也有。</p>
-<p class="pright"id="p12">——代码高亮</p>
-<img id="highcodes" src="https://star-homes.gitee.io/company/project/XYhtml/highcodes.jpg"></img>
-</div>
-<div class="div" id="div3">
-<img id="toolbar1" src="https://star-homes.gitee.io/company/project/XYhtml/toolbar1.jpg"></img>
-<p class="pleft" id="p21">快捷，是效率的提现。</p>
-<p class="pright" id="p22">——快捷工具与编辑</p>
-<img id="toolbar2" src="https://star-homes.gitee.io/company/project/XYhtml/toolbar2.jpg"></img>
-</div>
-<div class="div" id="div3">
-<p class="pleft" id="p31">误操作了？</p>
-<p class="pright" id="p32">——此处撤销</p>
-<img id="editbar" src="https://star-homes.gitee.io/company/project/XYhtml/editbar.png"></img>
-<p class="pleft" id="p33">没有服务器？</p>
-<p class="pright" id="p34">——保存后预览</p>
-</div>
-<div class="div" id="div4">
-<p class="pleft" id="p41">记不住代码？</p>
-<p class="pright"id="p42">——代码提示</p>
-<img id="codehelp" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/codehelp.jpg"></img>
-</div>
-<div id="downbar">
-<img id="icon2" class="topicon" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/icon.jpg"></img>
-<br>
-<button class="btn" id="toapk" onclick="todown()">立即下载</button>
-<br>
-<button class="btn" onclick="toupd()">更新内容</button>
-</div>
+	<body>
+		<div id="topbar">
+			<img id="icon1" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/icon.jpg">
+			<p id="topp">XY Html</p>
+			<button id="todown" onclick="tobottom()">立即<br>下载</button>
+		</div>
+		<div id="divfull">
+			<!--占位div-->
+		</div>
+		<div id="div1">
+			<h1 id="h1">极·简</h1>
+			<p id="p1">是一种态度。</p>
+		</div>
+		<div class="div" id="div2" >
+			<p class="pleft" id="p11">他们有的，我们也有。</p>
+			<p class="pright"id="p12">——代码高亮</p>
+			<img id="highcodes" src="https://star-homes.gitee.io/company/project/XYhtml/highcodes.jpg">
+		</div>
+		<div class="div" id="div3">
+			<img id="toolbar1" src="https://star-homes.gitee.io/company/project/XYhtml/toolbar1.jpg">
+			<p class="pleft" id="p21">快捷，是效率的提现。</p>
+			<p class="pright" id="p22">——快捷工具与编辑</p>
+			<img id="toolbar2" src="https://star-homes.gitee.io/company/project/XYhtml/toolbar2.jpg">
+		</div>
+		<div class="div" id="div3">
+			<p class="pleft" id="p31">误操作了？</p>
+			<p class="pright" id="p32">——此处撤销</p>
+			<img id="editbar" src="https://star-homes.gitee.io/company/project/XYhtml/editbar.png">
+			<p class="pleft" id="p33">没有服务器？</p>
+			<p class="pright" id="p34">——保存后预览</p>
+		</div>
+		<div class="div" id="div4">
+			<p class="pleft" id="p41">记不住代码？</p>
+			<p class="pright"id="p42">——代码提示</p>
+			<img id="codehelp" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/codehelp.jpg">
+		</div>
+		<div id="downbar">
+			<img id="icon2" class="topicon" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/icon.jpg">
+			<br>
+			<button class="btn" id="toapk" onclick="todown()">立即下载</button>
+			<br>
+			<button class="btn" onclick="toupd()">更新内容</button>
+		</div>
 <script>
-function todown(){
+function todown() {
     alert("请自行下载最新版本\n访问密码：iFOX\n默认自动复制");
-    copyText( 'iFOX', function (){console.log('复制成功')})
-      window.open("https://mcgo.lanzous.com/b0167zbyf") ;
-    }
-    function copyText(text, callback){
-        var tag = document.createElement('input');
-        tag.setAttribute('id', 'cp_hgz_input');
-        tag.value = text;
-        document.getElementsByTagName('body')[0].appendChild(tag);
-        document.getElementById('cp_hgz_input').select();
-        document.execCommand('copy');
-        document.getElementById('cp_hgz_input').remove();
-        if(callback){
-          callback(text)}
-      }
-      function tobottom(){
-          window.location.hash = "#download";
-        }
-        function toupd(){
-            window.open("upd.html");
-          }
-          </script>
-          </body>
-          </html>
+    copyText('iFOX', function () {console.log('复制成功')})
+	window.open("https://mcgo.lanzous.com/b0167zbyf") ;
+}
+function copyText(text, callback) {
+	var tag = document.createElement('input');
+	tag.setAttribute('id', 'cp_hgz_input');
+	tag.value = text;
+	document.getElementsByTagName('body')[0].appendChild(tag);
+	document.getElementById('cp_hgz_input').select();
+	document.execCommand('copy');
+	document.getElementById('cp_hgz_input').remove();
+	if (callback)
+	{
+		callback(text)}
+}
+function tobottom() {
+	window.location.hash = "#download";
+}
+function toupd() {
+	window.open("upd.html");
+}
+</script>
+	</body>
+</html>
