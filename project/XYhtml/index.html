@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<!--图片web地址：
+<!--资源web地址：
 https://star-homes.gitee.io/company/project/XYhtml/...
 可选的：
 toolbar1.jpg，
@@ -17,7 +16,7 @@ highcodes.jpg。
 </head>
 <style>
 *{
-outline:none;
+  outline:none;
 }
 body,html{
   height: 100%;
@@ -42,7 +41,7 @@ body,html{
 #icon1,#topp,#todown{
   display:inline-block;
   border-radius:24px;
-  }
+}
 #icon1{
   margin:18px;
   height:64px;
@@ -54,7 +53,6 @@ body,html{
   text-align:center;
   font-size:24px;
 }
-
 #todown{
   height:64px;
   width:64px;
@@ -64,10 +62,7 @@ body,html{
   border-radius: 12px;
   box-shadow: 3px 3px 6px #adadb1;
   color: white;
-
 }
-
-/*div1*/
 #div1{ 
   margin:0;
   clear:both;
@@ -81,8 +76,6 @@ body,html{
   font-size:18px;
   text-indent:2em;
 }
-
-/*div全局*/
 .div{
   background-color:white;
   margin:24px;
@@ -93,95 +86,47 @@ body,html{
 p{
   text-shadow:3px 3px 8px grey;
 }
-/**/
-
 #highcodes{
   width:70%;
   margin-left:30%;
   border-radius:12px;
 }
-
-#p11{
+.pleft{
   font-size:24px;
   margin:0;
 }
-
-#p12{
-  text-align:right;
-  margin:0;
+.pright{
+  text-align: right;
+  margin: 0;
 }
-
 #toolbar2{
   margin-left:30%;
   width:70%;
   padding:6px;
   border-radius:12px;
 }
-
 #toolbar1{
   margin-right:30%;
   width:70%;
   padding:6px;
   border-radius:12px;
 }
-
-#p21{
-  font-size:24px;
-  margin:0;
-}
-#p22{
-  text-align:right;
-  margin:0;
-}
-#p31{
-  font-size:24px;
-  margin:0;
-}
-#p32{
-  text-align:right;
-  margin:0;
-}
-#p33{
-  font-size:24px;
-  margin:0;
-}
-#p34{
-  text-align:right;
-  margin:0;
-}
 #editbar{
   width:100%;
   padding:6px;
   border-radius:12px;
 }
-
 #codehelp{
   width:100%;
   padding:6px;
   border-radius:12px;
 }
-#p41{
-  font-size: 24px;
-  margin: 0;
-}
-#p42{
-  text-align: right;
-  margin: 0;
-}
-#divt{
+#divfull{
   height:106px;
-  }
-#btndownload{
-  margin: 24px;
-  padding: 12px;
-  background-color: hsla(229,29%,29%,1.00);
-  border: none;
-  border-radius: 12px;
-  box-shadow: 3px 3px 6px #adadb1;
-  color: white;
 }
-#btndownload{
-  margin: 24px;
+.btn{
+  width:128px;
+  margin: 6px 0px;
   padding: 12px;
   background-color: hsla(229,29%,29%,1.00);
   border: none;
@@ -190,94 +135,96 @@ p{
   color: white;
   transition:all 0.25s;
 }
-#btndownload:active{
+.btn:active{
   background-color:white;
-  color:#adadb1;
+  color:black;
   transition:all 0.25s;
-  }
-
+}
 #icon2{
-  height:64px;
+  height:128px;
   width:auto;
-  border-radius:24px;
-  margin:auto 18px;
+  border-radius:48px;
+  margin:48px 0px 8px 0px;
   box-shadow:3px 3px 3px #adadb1;
 }
-#download{
-  width: auto;
-  height: calc(100% - 200px);
+#downbar{
+  height:calc(100% - 200px);
   text-align: center;
   background-color:white;
   margin:48px 24px 24px 24px;
   padding:24px;
-  border-radius:12px;
+  border-radius:48px;
   box-shadow: 3px 3px 8px 2px #adadb1;
+  min-height:400px;
 }
-</style>
 
+</style>
 <body>
 <div id="topbar">
 <img id="icon1" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/icon.jpg"></img>
 <p id="topp">XY Html</p>
 <button id="todown" onclick="tobottom()">立即<br>下载</button>
 </div>
-<div id="divt">
- <!--占位div-->
+<div id="divfull">
+<!--占位div-->
 </div>
 <div id="div1">
 <h1 id="h1">极·简</h1>
 <p id="p1">是一种态度。</p>
 </div>
 <div class="div" id="div2" >
-<p id="p11">他们有的，我们也有。</p>
-<p id="p12">——代码高亮</p>
+<p class="pleft" id="p11">他们有的，我们也有。</p>
+<p class="pright"id="p12">——代码高亮</p>
 <img id="highcodes" src="https://star-homes.gitee.io/company/project/XYhtml/highcodes.jpg"></img>
 </div>
 <div class="div" id="div3">
 <img id="toolbar1" src="https://star-homes.gitee.io/company/project/XYhtml/toolbar1.jpg"></img>
-<p id="p21">快捷，是效率的提现。</p>
-<p id="p22">——快捷工具与编辑</p>
+<p class="pleft" id="p21">快捷，是效率的提现。</p>
+<p class="pright" id="p22">——快捷工具与编辑</p>
 <img id="toolbar2" src="https://star-homes.gitee.io/company/project/XYhtml/toolbar2.jpg"></img>
 </div>
 <div class="div" id="div3">
-<p id="p31">误操作了？</p>
-<p id="p32">——此处撤销</p>
+<p class="pleft" id="p31">误操作了？</p>
+<p class="pright" id="p32">——此处撤销</p>
 <img id="editbar" src="https://star-homes.gitee.io/company/project/XYhtml/editbar.png"></img>
-<p id="p33">没有服务器？</p>
-<p id="p34">——保存后预览</p>
+<p class="pleft" id="p33">没有服务器？</p>
+<p class="pright" id="p34">——保存后预览</p>
 </div>
 <div class="div" id="div4">
-<p id="p41">记不住代码？</p>
-<p id="p42">——代码提示</p>
+<p class="pleft" id="p41">记不住代码？</p>
+<p class="pright"id="p42">——代码提示</p>
 <img id="codehelp" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/codehelp.jpg"></img>
 </div>
-<div id="download">
+<div id="downbar">
 <img id="icon2" class="topicon" src="https://gitee.com/sTaR-Homes/company/raw/master/project/XYhtml/icon.jpg"></img>
 <br>
-<button id="btndownload" onclick="todown()">立即下载</button>
+<button class="btn" id="toapk" onclick="todown()">立即下载</button>
+<br>
+<button class="btn" onclick="toupd()">更新内容</button>
 </div>
 <script>
 function todown(){
     alert("请自行下载最新版本\n访问密码：iFOX\n默认自动复制");
     copyText( 'iFOX', function (){console.log('复制成功')})
-    window.open("https://mcgo.lanzous.com/b0167zbyf") ;
-        }
-         
-        function copyText(text, callback){ // text: 要复制的内容， callback: 回调
-            var tag = document.createElement('input');
-            tag.setAttribute('id', 'cp_hgz_input');
-            tag.value = text;
-            document.getElementsByTagName('body')[0].appendChild(tag);
-            document.getElementById('cp_hgz_input').select();
-            document.execCommand('copy');
-            document.getElementById('cp_hgz_input').remove();
-            if(callback) {callback(text)}
-        }
+      window.open("https://mcgo.lanzous.com/b0167zbyf") ;
+    }
+    function copyText(text, callback){
+        var tag = document.createElement('input');
+        tag.setAttribute('id', 'cp_hgz_input');
+        tag.value = text;
+        document.getElementsByTagName('body')[0].appendChild(tag);
+        document.getElementById('cp_hgz_input').select();
+        document.execCommand('copy');
+        document.getElementById('cp_hgz_input').remove();
+        if(callback){
+          callback(text)}
+      }
       function tobottom(){
           window.location.hash = "#download";
+        }
+        function toupd(){
+            window.open("upd.html");
           }
-    </script>
-
-</script>
-</body>
-</html>
+          </script>
+          </body>
+          </html>
