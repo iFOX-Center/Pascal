@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta charset="utf-8">
+<title>公告</title>
+</head>
+<body>
+    <div class="bar" >
+    <div class="t_d">
+        <p class="gg">公告</p>
+        <p class="date">2021年3月7日</p>
+        </div>
+        <hr class="hr">
+        <div class="text">
+        <p class="textp">
+            更新内容：
+            <br>
+            1.修复bugs,
+            <br>
+            2.你是猪。
+            </p>
+        </div>
+    </div>
+</body>
+    <style>
+        :root{
+            --colour:#adadb1; 
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            margin: 0;
+            padding: 24px;
+            background-color: lightblue;
+        }
+        body{
+            text-align: center;
+        }
+        p{
+            text-shadow: 3px 3px 3px var(--colour);
+        }
+        .bar{
+            text-align: center;
+            padding: 24px;
+            border-radius: 24px;
+            background-color: white;
+            box-shadow: 3px 3px 6px var(--colour);
+        }
+        .t_d{
+            /*flex 布局*/
+            display: flex;
+            /*实现垂直居中*/
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 100%;
+        }
+        .date{
+            /*flex 布局*/
+            display: flex;
+            /*实现垂直居中*/
+            align-items:flex-end;
+            justify-content:flex-end;
+            text-align:right;
+            float: right;
+            width: 50%;
+            height: 100%;
+        }
+        .gg{
+            /*flex 布局*/
+            display: flex;
+            /*实现垂直居中*/
+            align-items: baseline;
+            text-align: left;
+            float: left;
+            width: 50%;
+            font-size: 36px;
+        }
+        .hr{
+            margin: 6px 0px;
+        }
+        .text{
+            text-align: left;
+        }
+        .textp{
+            text-shadow: 3px 3px 24px var(--colour);
+            font-size: 18px;
+        }
+    </style>
+</html>
