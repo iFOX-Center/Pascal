@@ -12,7 +12,7 @@
 /*---------------------------------------------------------------*/
 
 /*wap视图*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1000px){
     html{
 
     }
@@ -211,7 +211,7 @@
 /*---------------------------------------------------------------*/
 
 /*PC视图*/
-@media screen and (min-width: 601px){
+@media screen and (min-width: 1001px){
    
     html{
 
