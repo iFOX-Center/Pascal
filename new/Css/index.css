@@ -212,7 +212,202 @@
 
 /*PC视图*/
 @media screen and (min-width: 601px){
+   
+    html{
+
+    }
+    p{
+        text-shadow: var(--yingying);
+    }  
+    body{
+        background-position: center;
+        /*-moz-background-size:100%; /* 老版本的 Firefox */
+        /*background-size: 100%;*/
+    }
+/*---------------------------------------------------------------*/
     
+/*顶栏*/ 
+    /*TBar样式*/
+    #Tbar{
+        margin: 8px;
+        margin-top: 2px;
+        background-color:white;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 6px;
+        box-shadow: 2px 2px 6px grey;
+    }
+    /*logo样式*/
+    #logo{
+        margin: 6px;
+        background-color: blueviolet;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        box-shadow: var(--yingying);
+    }
+    /*标题样式*/
+    #titles{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /*标题_中文样式*/
+    #title1{
+        font-size: 2vw;
+        color: black;
+    }
+    /*标题_英语样式*/
+    #title2{
+        font-size: 0.9vw;
+        color:hsla(0,0%,27%,1.00);
+    }
+     /*预留按钮样式*/
+    #Tbtn{
+        margin: 6px;
+        padding:0px 10px;
+        background-color:#E9E9E9;
+        border-radius: 6px;
+        border:none;
+        transition: all 0.3s;
+        border:solid;
+        border-color:#DCDCDC;
+        border-width: 1px;
+    } 
+    /*预留按钮鼠标悬停*/
+    #Tbtn:hover{
+        transition: all 0.3s;
+        box-shadow: 1px 1px 3px #adadb1;
+        background-color:#D4D4D4;
+        border:solid;
+        border-width: 1px;
+    }
+    
+    /*预留按钮点击*/
+    #Tbtn:active{
+        transition: all 0.3s;
+        transform: scale(0.95);
+        background-color:#AFAFAF;
+        box-shadow: none;
+    }
+    
+/*---------------------------------------------------------------*/
+    
+/*通知样式*/
+    /*全局*/
+    #toastimg,#ttext,#btnm,#btnc{
+        margin:0 2px 0 2px;
+    }
+    /*容器*/
+    #ttop{
+        padding: 8px;
+        margin: 8px;
+        display: flex;
+        background-color: white;
+        align-items: center;
+        justify-content:space-between;
+        box-shadow: var(--yingying);
+        border-radius: 6px;
+    }
+    /*图标*/
+    #toastimg{
+        border-radius: 6px;
+        width: 18px;
+        height: 18px;
+    }
+    /*主要文本*/
+    #ttext{
+        flex: 1;
+        color: red;
+    }
+    /*按钮*/
+    #btnm,#btnc{
+        margin: 6px;
+        padding:0px 10px;
+        background-color:#E9E9E9;
+        border-radius: 6px;
+        border:none;
+        transition: all 0.3s;
+        border:solid;
+        border-color:#DCDCDC;
+        border-width: 1px;
+    } 
+    /*按钮鼠标悬停*/
+    #btnm:hover,#btnc:hover{
+        transition: all 0.3s;
+        box-shadow: 1px 1px 3px #adadb1;
+        background-color:#D4D4D4;
+        border:solid;
+        border-width: 1px;
+    }
+    
+    /*按钮点击*/
+    #btnm:active,#btnc:active{
+        transition: all 0.3s;
+        transform: scale(0.95);
+        background-color:#AFAFAF;
+        box-shadow: none;
+    }
+    
+/*---------------------------------------------------------------*/
+/*主体*/
+    
+    
+
+/*---------------------------------------------------------------*/
+    
+/*导航*/
+    /*容器*/
+    #Bbar{
+        width: calc(100% - 16px);
+        margin: 0px 8px;
+        background-color:white;
+        height: auto;
+        display: flex;
+        justify-content:space-around;
+        border-radius: 6px 6px 0px 0px;
+        box-shadow: 2px 2px 6px grey;
+        position: absolute;
+        bottom: 0;
+    }
+    /*按钮*/
+    .Bbtns{
+        margin: 2px 0px;
+        padding: 8px 8px 2px 8px;
+        display: flex;
+        align-items:center;
+        justify-content:flex-end;
+        flex-direction: column;
+        transition: all 0.3s;
+        border-radius: 6px;
+    }
+    /*按钮鼠标悬停*/
+    .Bbtns:hover{
+        transform: scale(0.85);
+        transition: all 0.3s;
+    }
+    
+    /*按钮按下*/
+    .Bbtns:active{
+        background-color: grey;
+        transition: all 0.3s;
+    }
+    
+
+    /*导航图标*/
+    .bbtnimg{
+        height:24px;
+        width:24px;
+    }
+
+    /*导航文字*/
+    .bbtext{
+        font-size: 0.5vw;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 
