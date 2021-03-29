@@ -12,7 +12,7 @@
 /*---------------------------------------------------------------*/
 
 /*wap视图*/
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1024px){
     html{
 
     }
@@ -56,13 +56,14 @@
     }
     /*标题_中文样式*/
     #title1{
-        font-size: 3.5vw;
+        font-size: 1.3rem;
         color: black;
     }
     /*标题_英语样式*/
     #title2{
-        font-size: 2vw;
+        font-size: 0.8rem;
         color:hsla(0,0%,27%,1.00);
+        padding-bottom: 2px;
     }
      /*预留按钮样式*/
     #Tbtn{
@@ -184,7 +185,7 @@
     }
     /*按钮鼠标悬停*/
     .Bbtns:hover{
-        transform: scale(0.85);
+        transform: scale(1);
         transition: all 0.3s;
     }
     
@@ -202,7 +203,7 @@
 
     /*导航文字*/
     .bbtext{
-        font-size: 0.5vw;
+        font-size: 0.8rem;
         padding: 0;
         margin: 0;
     }
@@ -211,7 +212,7 @@
 /*---------------------------------------------------------------*/
 
 /*PC视图*/
-@media screen and (min-width: 1001px){
+@media screen and (min-width: 1024px){
    
     html{
 
