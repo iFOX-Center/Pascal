@@ -4,7 +4,7 @@
 }
 /*全局style'*/
 *{
-	margin: 0;
+    margin: 0;
 	padding: 0;
     outline: none;
 }
@@ -14,12 +14,15 @@
 /*wap视图*/
 @media screen and (max-width: 1024px){
     html{
-
+        height: 100%;
     }
     p{
-        text-shadow: var(--yingying);
+        text-shadow: 1px 1px 12px #adadb1;
     }  
     body{
+        display: flex;
+        flex-direction:column;
+        height: 100%;
         background-position: center;
         /*-moz-background-size:100%; /* 老版本的 Firefox */
         /*background-size: 100%;*/
@@ -29,8 +32,7 @@
 /*顶栏*/ 
     /*TBar样式*/
     #Tbar{
-        margin: 8px;
-        margin-top: 2px;
+        margin: 0px 8px;
         background-color:white;
         height: auto;
         display: flex;
@@ -153,7 +155,16 @@
     
 /*---------------------------------------------------------------*/
 /*主体*/
-    
+    #Mbar{
+        padding:  8px;
+        margin: 0px 8px;
+        display: flex;
+        flex-direction:column;
+        background-color: white;
+        box-shadow: var(--yingying);
+        border-radius: 6px;
+        flex: 1;
+    }
     
 
 /*---------------------------------------------------------------*/
@@ -162,15 +173,12 @@
     /*容器*/
     #Bbar{
         width: calc(100% - 16px);
-        margin: 0px 8px;
+        margin: 8px 8px 0px;
         background-color:white;
-        height: auto;
         display: flex;
         justify-content:space-around;
         border-radius: 6px 6px 0px 0px;
         box-shadow: 2px 2px 6px grey;
-        position: absolute;
-        bottom: 0;
     }
     /*按钮*/
     .Bbtns{
@@ -212,7 +220,7 @@
 /*---------------------------------------------------------------*/
 
 /*PC视图*/
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1025px){
    
     html{
 

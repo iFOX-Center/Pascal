@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    
     $("#Bbtn1").click(function(){
         cc();
         $("#Bbtn1").css("background-color","#adadb1");
