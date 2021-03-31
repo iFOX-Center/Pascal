@@ -13,6 +13,8 @@
 
 /*wap视图*/
 @media screen and (max-width: 1024px){
+    
+    /*全局*/
     html{
         height: 100%;
     }
@@ -127,7 +129,9 @@
         text-overflow:ellipsis;
         white-space:nowrap;
     }
- #btnm,#btnc{
+    
+    /*两个按钮*/
+    #btnm,#btnc{
         margin: 6px;
         padding:0px 10px;
         background-color:#E9E9E9;
@@ -138,6 +142,7 @@
         border-color:#DCDCDC;
         border-width: 1px;
     } 
+    
     /*按钮鼠标悬停*/
     /*#btnm:hover,#btnc:hover{
         transition: all 0.3s;
@@ -147,7 +152,7 @@
         border-width: 1px;
     }*/
     
-    /*按钮点击*/
+    /*按钮点击状态*/
     #btnm:active,#btnc:active{
         transition: all 0.3s;
         transform: scale(0.95);
@@ -155,9 +160,12 @@
         box-shadow: none;
     }
     
+    /*close按钮*/
     #btnc{
         display: none;
     }
+    
+    /*more按钮*/
     #btnm{
         display: flex;
     }
@@ -176,6 +184,7 @@
         flex: 1;
     }
     
+    /*分页全局，包括page1，page2，page3*/
     .mmin{
         height: 100%;
         width: 100%;
@@ -190,15 +199,21 @@
     #page2{
         display: none ;
     }
+    
+    /*产品页面应用列表*/
     #applist{
         display: flex;
         flex-direction: row;
         flex-wrap:wrap;
         justify-content: center;
     }
+    
+    /*产品页面p标签*/
     .p2p{
         text-indent:2em;
     }
+    
+    /*APP标签*/
     .applabs{
         margin: 6px;
         display: flex;
@@ -209,15 +224,23 @@
         background-color: hsla(216,100%,88%,0.74);
         border-radius: 6px;
     }
+    
+    /*APP标签中间文本列*/
     .midtext{
         margin: 4px 0px;
         flex: 1;
     }
+    
+    
+    /*app标签中的应用图标*/
     .appimg{
         margin: 8px;
         height: 40px;
         width: 40px;
     }
+    
+    
+    /*下载按钮*/
     .appdownload{
         display: flex;
         align-items:center;
@@ -233,6 +256,8 @@
         border-color:#DCDCDC;
         border-width: 1px;
     }
+    
+    /*下载按钮悬停*/
     /*
     .appdownload:hover{
         transition: all 0.3s;
@@ -242,6 +267,8 @@
         border-width: 1px;
     }
     */
+    
+    /*按钮点击*/
     .appdownload:active{
         transition: all 0.3s;
         transform: scale(0.95);
@@ -249,12 +276,18 @@
         color: white;
         box-shadow: none;
     }
+    
+    /*APP应用名称*/
     .appname{
         font-size: 18px;
     }
+    
+    /*APP介绍*/
     .appfunc{
         font-size: 12px;
     }
+    
+    /*APP version*/
     .appv{
         font-size: 12px;
         color: gray;
@@ -264,14 +297,25 @@
     #page3{
         display: none;
     }
+    
+    /*支持页面p标签*/
     .p3p{
         text-indent:2em;
     }
+    
+    /*网站信息p标签*/
     .p3p1{
         text-align: center;
         font-size: 1rem;
     }
     
+    /*联系我们按钮div*/
+    #callus{
+        text-align: center;
+        height: 30px;
+    }
+    
+    /*联系我们按钮*/
     .btncall{
         height: 100%;
         padding: 0 10px;
@@ -284,6 +328,8 @@
         border-color:#DCDCDC;
         border-width: 1px;
     }
+    
+    /*鼠标悬停*/
     /*
     .btncall:hover{
         transition: all 0.3s;
@@ -292,16 +338,14 @@
         border:solid;
         border-width: 1px;
     }
+    
+    /*按钮点击*/
     */
     .btncall:active{
         transition: all 0.3s;
         transform: scale(0.95);
         background-color:#AFAFAF;
         box-shadow: none;
-    }
-    #callus{
-        text-align: center;
-        height: 30px;
     }
 
 /*---------------------------------------------------------------*/
@@ -364,16 +408,19 @@
 /*PC视图*/
 @media screen and (min-width: 1025px){
    
+    
+    /*全局*/
     html{
         height: 100%;
-    }
-    p{
-        text-shadow: var(--yingying);
+        width: 100%;    }
+    p,h2{
+        text-shadow: 1px 1px 12px #adadb1;
     }  
     body{
         display: flex;
         flex-direction:column;
         height: 100%;
+        width: 100%;
         background-position: center;
         /*-moz-background-size:100%; /* 老版本的 Firefox */
         /*background-size: 100%;*/
@@ -383,14 +430,13 @@
 /*顶栏*/ 
     /*TBar样式*/
     #Tbar{
-        margin: 8px;
-        margin-top: 2px;
+        margin: 0;
         background-color:white;
         height: auto;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        border-radius: 6px;
-        box-shadow: 2px 2px 6px grey;
+        box-shadow: 0px 6px 6px grey;
     }
     /*logo样式*/
     #logo{
@@ -407,15 +453,16 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+  
     }
     /*标题_中文样式*/
     #title1{
-        font-size: 2vw;
+        font-size: 1.15rem;
         color: black;
     }
     /*标题_英语样式*/
     #title2{
-        font-size: 0.9vw;
+        font-size: 0.8rem;
         color:hsla(0,0%,27%,1.00);
     }
      /*预留按钮样式*/
@@ -460,7 +507,7 @@
         margin: 8px;
         display: flex;
         background-color: white;
-        align-items: center;
+        align-items:center;
         justify-content:space-between;
         box-shadow: var(--yingying);
         border-radius: 6px;
@@ -478,7 +525,8 @@
         text-overflow:ellipsis;
         white-space:nowrap;
     }
-    /*按钮*/
+    
+    /*两个按钮*/
     #btnm,#btnc{
         margin: 6px;
         padding:0px 10px;
@@ -490,6 +538,7 @@
         border-color:#DCDCDC;
         border-width: 1px;
     } 
+    
     /*按钮鼠标悬停*/
     #btnm:hover,#btnc:hover{
         transition: all 0.3s;
@@ -499,12 +548,22 @@
         border-width: 1px;
     }
     
-    /*按钮点击*/
+    /*按钮点击状态*/
     #btnm:active,#btnc:active{
         transition: all 0.3s;
         transform: scale(0.95);
         background-color:#AFAFAF;
         box-shadow: none;
+    }
+    
+    /*close按钮*/
+    #btnc{
+        display: none;
+    }
+    
+    /*more按钮*/
+    #btnm{
+        display: flex;
     }
     
 /*---------------------------------------------------------------*/
@@ -517,29 +576,197 @@
         background-color: white;
         box-shadow: var(--yingying);
         border-radius: 6px;
+        overflow-y:auto;
         flex: 1;
     }
     
+    /*分页全局，包括page1，page2，page3*/
+    .mmin{
+        height: 100%;
+        width: 100%;
+        flex-direction:column;
+    }
+    /*首页*/
+    #page1{
+        display: flex;
+    }
+    
+    /*产品*/
+    #page2{
+        display: none ;
+    }
+    
+    /*产品页面应用列表*/
+    #applist{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    
+    /*产品页面p标签*/
+    .p2p{
+        text-indent:2em;
+    }
+    
+    /*APP标签*/
+    .applabs{
+        margin: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: auto;
+        background-color: hsla(216,100%,88%,0.74);
+        border-radius: 6px;
+    }
+    
+    /*APP标签中间文本列*/
+    .midtext{
+        margin: 4px 0px;
+        flex: 1;
+    }
+    
+    
+    /*app标签中的应用图标*/
+    .appimg{
+        margin: 8px;
+        height: 40px;
+        width: 40px;
+    }
+    
+    
+    /*下载按钮*/
+    .appdownload{
+        display: flex;
+        align-items:center;
+        align-items: center;
+        font-size: 12px;
+        padding: 8px 12px;
+        margin: 24px 8px;
+        background-color:hsla(132,100%,40%,1.00);
+        border-radius: 6px;
+        border:none;
+        transition: all 0.3s;
+        border:solid;
+        border-color:#DCDCDC;
+        border-width: 1px;
+    }
+    
+    /*下载按钮悬停*/
+    
+    .appdownload:hover{
+        transition: all 0.3s;
+        box-shadow: 1px 1px 3px hsla(132,100%,25%,1.00);
+        background-color:hsla(132,100%,80%,1.00);
+        border:solid;
+        border-width: 1px;
+    }
+    
+    
+    /*按钮点击*/
+    .appdownload:active{
+        transition: all 0.3s;
+        transform: scale(0.95);
+        background-color:hsla(132,80%,30%,1.00);
+        color: white;
+        box-shadow: none;
+    }
+    
+    /*APP应用名称*/
+    .appname{
+        font-size: 18px;
+    }
+    
+    /*APP介绍*/
+    .appfunc{
+        font-size: 12px;
+    }
+    
+    /*APP version*/
+    .appv{
+        font-size: 12px;
+        color: gray;
+    }
+    
+    /*支持*/
+    #page3{
+        display: none;
+    }
+    
+    /*支持页面p标签*/
+    .p3p{
+        text-indent:2em;
+    }
+    
+    /*网站信息p标签*/
+    .p3p1{
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    /*联系我们按钮div*/
+    #callus{
+        text-align: center;
+        height: 30px;
+    }
+    
+    /*联系我们按钮*/
+    .btncall{
+        height: 100%;
+        padding: 0 10px;
+        margin: 6px 10px;
+        background-color:#E9E9E9;
+        border-radius: 6px;
+        border:none;
+        transition: all 0.3s;
+        border:solid;
+        border-color:#DCDCDC;
+        border-width: 1px;
+    }
+    
+    /*鼠标悬停*/
+    
+    .btncall:hover{
+        transition: all 0.3s;
+        box-shadow: 1px 1px 3px #adadb1;
+        background-color:#D4D4D4;
+        border:solid;
+        border-width: 1px;
+    }
+    
+    /*按钮点击*/
+    
+    .btncall:active{
+        transition: all 0.3s;
+        transform: scale(0.95);
+        background-color:#AFAFAF;
+        box-shadow: none;
+    }
 
 /*---------------------------------------------------------------*/
     
 /*导航*/
     /*容器*/
+    #TBAR{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     #Bbar{
-        width: calc(100% - 16px);
-        margin: 0px 8px;
+        width: 30%;
+        padding: 8px;
+        margin: 8px;
         background-color:white;
-        height: auto;
         display: flex;
         justify-content:space-around;
-        border-radius: 6px 6px 0px 0px;
+        border-radius: 16px;
         box-shadow: 2px 2px 6px grey;
-        position: absolute;
-        bottom: 0;
     }
+    
     /*按钮*/
     .Bbtns{
-        margin: 2px 0px;
+        margin: 0px;
         padding: 8px 8px 2px 8px;
         display: flex;
         align-items:center;
@@ -548,9 +775,14 @@
         transition: all 0.3s;
         border-radius: 6px;
     }
+    
+    #Bbtn1{
+        background-color: #ADADB1;
+    }
+    
     /*按钮鼠标悬停*/
     .Bbtns:hover{
-        transform: scale(0.85);
+        transform: scale(1.3);
         transition: all 0.3s;
     }
     
@@ -560,16 +792,15 @@
         transition: all 0.3s;
     }
     
-
     /*导航图标*/
     .bbtnimg{
-        height:24px;
-        width:24px;
+        height:18px;
+        width:18px;
     }
 
     /*导航文字*/
     .bbtext{
-        font-size: 0.5vw;
+        font-size: 0.8rem;
         padding: 0;
         margin: 0;
     }
