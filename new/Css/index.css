@@ -204,8 +204,9 @@
     }
     
     .btncall{
-        margin: 6px;
-        padding:5px 10px;
+        height: 100%;
+        padding: 0 10px;
+        margin: 6px 10px;
         background-color:#E9E9E9;
         border-radius: 6px;
         border:none;
@@ -231,7 +232,7 @@
     }
     #callus{
         text-align: center;
- 
+        height: 30px;
     }
 
 /*---------------------------------------------------------------*/
@@ -504,5 +505,3 @@
         margin: 0;
     }
 }
-
-
