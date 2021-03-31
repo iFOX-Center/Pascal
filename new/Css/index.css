@@ -198,11 +198,11 @@
     .p2p{
         text-indent:2em;
     }
-        .applabs{
+    .applabs{
         margin: 6px;
         display: flex;
         justify-content: center;
-        width: 350px;
+        width: 300px;
         height: auto;
         background-color: hsla(216,100%,88%,0.74);
         border-radius: 6px;
@@ -213,7 +213,7 @@
     .appimg{
         margin: 4px;
         height: 64px;
-        height: 64px;
+        width: 64px;
     }
     .appdownload{
         display: flex;
