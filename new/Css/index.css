@@ -16,7 +16,7 @@
     html{
         height: 100%;
     }
-    p{
+    p,h2{
         text-shadow: 1px 1px 12px #adadb1;
     }  
     body{
@@ -109,7 +109,7 @@
         margin: 8px;
         display: flex;
         background-color: white;
-        align-items: center;
+        align-items:center;
         justify-content:space-between;
         box-shadow: var(--yingying);
         border-radius: 6px;
@@ -123,9 +123,11 @@
     /*主要文本*/
     #ttext{
         flex: 1;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
     }
-    /*按钮*/
-    #btnm,#btnc{
+ #btnm,#btnc{
         margin: 6px;
         padding:0px 10px;
         background-color:#E9E9E9;
@@ -153,6 +155,13 @@
         box-shadow: none;
     }
     
+    #btnc{
+        display: none;
+    }
+    #btnm{
+        display: flex;
+    }
+    
 /*---------------------------------------------------------------*/
 /*主体*/
     #Mbar{
@@ -163,9 +172,67 @@
         background-color: white;
         box-shadow: var(--yingying);
         border-radius: 6px;
+        overflow-y:auto;
         flex: 1;
     }
     
+    .mmin{
+        height: 100%;
+        width: 100%;
+        flex-direction:column;
+    }
+    /*首页*/
+    #page1{
+        display: flex;
+    }
+    
+    /*产品*/
+    #page2{
+        display: none ;
+    }
+    
+    /*支持*/
+    #page3{
+        display: none;
+    }
+    .p3p{
+        text-indent:2em;
+    }
+    .p3p1{
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .btncall{
+        margin: 6px;
+        padding:5px 10px;
+        background-color:#E9E9E9;
+        border-radius: 6px;
+        border:none;
+        transition: all 0.3s;
+        border:solid;
+        border-color:#DCDCDC;
+        border-width: 1px;
+    }
+    /*
+    .btncall:hover{
+        transition: all 0.3s;
+        box-shadow: 1px 1px 3px #adadb1;
+        background-color:#D4D4D4;
+        border:solid;
+        border-width: 1px;
+    }
+    */
+    .btncall:active{
+        transition: all 0.3s;
+        transform: scale(0.95);
+        background-color:#AFAFAF;
+        box-shadow: none;
+    }
+    #callus{
+        text-align: center;
+ 
+    }
 
 /*---------------------------------------------------------------*/
     
@@ -191,6 +258,11 @@
         transition: all 0.3s;
         border-radius: 6px;
     }
+    
+    #Bbtn1{
+        background-color: #ADADB1;
+    }
+    
     /*按钮鼠标悬停*/
     .Bbtns:hover{
         transform: scale(1);
@@ -223,12 +295,15 @@
 @media screen and (min-width: 1025px){
    
     html{
-
+        height: 100%;
     }
     p{
         text-shadow: var(--yingying);
     }  
     body{
+        display: flex;
+        flex-direction:column;
+        height: 100%;
         background-position: center;
         /*-moz-background-size:100%; /* 老版本的 Firefox */
         /*background-size: 100%;*/
@@ -329,7 +404,9 @@
     /*主要文本*/
     #ttext{
         flex: 1;
-        color: red;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
     }
     /*按钮*/
     #btnm,#btnc{
@@ -362,7 +439,16 @@
     
 /*---------------------------------------------------------------*/
 /*主体*/
-    
+    #Mbar{
+        padding:  8px;
+        margin: 0px 8px;
+        display: flex;
+        flex-direction:column;
+        background-color: white;
+        box-shadow: var(--yingying);
+        border-radius: 6px;
+        flex: 1;
+    }
     
 
 /*---------------------------------------------------------------*/
