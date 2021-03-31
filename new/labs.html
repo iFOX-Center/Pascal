@@ -1,0 +1,90 @@
+<div class="applabs" >
+    <img class="appimg" src="Recourse/Images/tabs/apps.png">
+    <div class="midtext">
+        <p class="appname">应用名称</p>
+        <p class="appfunc">简介</p>
+        <p class="appv">V1.0.0</p>
+    </div>
+    <buttion id="" class="appdownload">下载</buttion>
+</div>
+<div class="applabs" >
+    <img class="appimg" src="Recourse/Images/tabs/apps.png">
+    <div class="midtext">
+        <p class="appname">应用名称</p>
+        <p class="appfunc">简介</p>
+        <p class="appv">V1.0.0</p>
+    </div>
+    <buttion id="" class="appdownload">下载</buttion>
+</div>
+<div class="applabs" >
+    <img class="appimg" src="Recourse/Images/tabs/apps.png">
+    <div class="midtext">
+        <p class="appname">应用名称</p>
+        <p class="appfunc">简介</p>
+        <p class="appv">V1.0.0</p>
+    </div>
+    <buttion id="" class="appdownload">下载</buttion>
+</div>
+<style>
+    *{
+        outline: red 1px solid;
+        margin: 0;
+        padding: 0px;
+    
+    }
+    .applabs{
+        margin: 6px;
+        display: flex;
+        justify-content: center;
+        width: 350px;
+        height: auto;
+        background-color: hsla(216,100%,88%,0.74);
+        border-radius: 6px;
+    }
+    .midtext{
+        flex: 1;
+    }
+    .appimg{
+        margin: 4px;
+        height: 64px;
+        height: 64px;
+    }
+    .appdownload{
+        display: flex;
+        align-items:center;
+        padding: 0 10px;
+        margin: 24px 5px;
+        background-color:hsla(132,100%,40%,1.00);
+        border-radius: 6px;
+        border:none;
+        transition: all 0.3s;
+        border:solid;
+        border-color:#DCDCDC;
+        border-width: 1px;
+    }
+    /*
+    .appdownload:hover{
+        transition: all 0.3s;
+        box-shadow: 1px 1px 3px hsla(132,100%,25%,1.00);
+        background-color:hsla(132,100%,80%,1.00);
+        border:solid;
+        border-width: 1px;
+    }
+    */
+    .appdownload:active{
+        transition: all 0.3s;
+        transform: scale(0.95);
+        background-color:hsla(132,80%,40%,1.00);
+        box-shadow: none;
+    }
+    .appname{
+        font-size: 20px;
+    }
+    .appfunc{
+        font-size: 16px;
+    }
+    .appv{
+        font-size: 12px;
+        color: gray;
+    }
+</style>
