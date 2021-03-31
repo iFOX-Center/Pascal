@@ -1,7 +1,8 @@
 var s;
 
-$(document).ready(function(){
-    
+
+$(document).ready(function(){   
+    //style部分
     $("#btnm").click(function(){
         s = "none";
         mc1();
@@ -56,6 +57,4 @@ $(document).ready(function(){
         $(".Bbtns").css("background-color","white");
         $(".mmin").css("display","none");
     }
-    
-
 })
